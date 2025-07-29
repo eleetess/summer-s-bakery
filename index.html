@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer's Bakery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Love+Light&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Love+Light&family=Shadows+Into+Light&display=swap');
+</style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          shadows: ['"Shadows Into Light"', 'cursive'],
+          bungee: ['"Bungee Spice"', 'cursive'],
+          love: ['"Love Light"', 'cursive'],
+          
+        },
+        animation: {
+          fadeIn: "fadeIn 2s ease-in forwards",
+          slideUp: "slideUp 1s ease-out forwards",
+          zoomIn: "zoomIn 0.8s ease-out forwards",
+        },
+        keyframes: {
+          fadeIn: {
+            from: { opacity: 0 },
+            to: { opacity: 1 },
+          },
+          slideUp: {
+            from: { transform: "translateY(20px)", opacity: 0 },
+            to: { transform: "translateY(0)", opacity: 1 },
+          },
+          zoomIn: {
+            from: { transform: "scale(0.95)", opacity: 0 },
+            to: { transform: "scale(1)", opacity: 1 },
+          },
+        },
+      },
+    },
+  };
+</script>
+  </head>
+  <body class="font-sans text-gray-800">
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-100 via-yellow-100 to-green-100 bg-cover bg-center" 
+  style="background-image: url('bakery.jpg');">
+      <div class="text-center px-4 animate-fadeIn">
+        <h1 class="text-5xl font-bold text-pink-600 mb-4 font-shadows">Summer's Bakery</h1>
+        <p class="text-xl font-bold text-gray-700 mb-6 font-love">Sweet treats made with love all year round 🍰</p>
+        <a href="#contact" class="bg-pink-400 text-white px-6 py-2 rounded-full hover:bg-pink-500 transition-transform hover:scale-105">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 px-6 bg-gradient-to-r from-yellow-100 via-pink-100 to-purple-100">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-purple-600 mb-10 animate-slideUp font-shadows">Our Specialties</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all animate-zoomIn">
+            <h3 class="text-xl font-bold text-pink-500 mb-2 font-shadows">Cupcakes</h3>
+            <p class="mb-2 font-shadows font-bold">Special designed or regular</p>
+            <p class="text-gray-600 font-bold font-shadows">Fluffy, frosted, and fabulous!</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all animate-zoomIn delay-100">
+            <h3 class="text-xl font-bold font-shadows text-yellow-500 mb-2">Custom Cakes</h3>
+            <p class="mb-2"></p>
+            <p class="text-gray-600 font-bold font-shadows">Personalized cakes for every occasion.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all animate-zoomIn delay-200">
+            <h3 class="text-xl font-bold font-shadows text-green-500 mb-2">Pastries</h3>
+            <p class="mb-2"></p>
+            <p class="text-gray-600 font-bold font-shadows">Delicate, buttery, and baked fresh daily.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-6 bg-gradient-to-r from-yellow-50 via-pink-50 to-purple-50 text-gray-800">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl text-center font-bold text-pink-600 mb-10 font-shadows">SUMMER'S BAKERY<br><span class="text-2xl font-normal">Price List</span></h2>
+
+    <!-- Cake Prices -->
+    <div class="mb-10">
+      <h3 class="text-2xl font-semibold font-shadows text-pink-500 mb-4">🎂 Cake Prices <span class="text-sm text-gray-500">(Simple designs with border only)</span></h3>
+      <ul class="space-y-2">
+        <li>6 in 3 layer (serves 12–14): <span class="font-bold">$40</span></li>
+        <li>8 in 3 layer (serves 18–20): <span class="font-bold">$55</span></li>
+        <li>10 in 2 layer (serves 24–26): <span class="font-bold">$70</span></li>
+        <li>10 in 3 layer (serves 30–32): <span class="font-bold">$85</span></li>
+      </ul>
+    </div>
+
+    <!-- Flavors -->
+    <div class="mb-10">
+      <h3 class="text-2xl font-semibold font-shadows text-pink-500 mb-4">🍰 Cake & Buttercream Flavors</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+        <ul class="list-disc list-inside">
+          <li>White</li>
+          <li>Vanilla</li>
+          <li>Chocolate</li>
+          <li>Red Velvet</li>
+          <li>Strawberry</li>
+          <li>Funfetti</li>
+        </ul>
+        <ul class="list-disc list-inside">
+          <li>Vanilla Buttercream</li>
+          <li>Chocolate Buttercream</li>
+          <li>Strawberry Buttercream</li>
+          <li>Nutella Buttercream</li>
+          <li>Peanut Butter Buttercream</li>
+        </ul>
+      </div>
+      <p class="mt-2 italic text-sm text-gray-600">* Add fresh fruit for an additional <strong>$8.00</strong></p>
+    </div>
+
+    <!-- Cookies -->
+    <div class="mb-10">
+      <h3 class="text-2xl font-semibold font-shadows text-pink-500 mb-4">🍪 Custom Sugar Cookies / dozen</h3>
+      <ul class="space-y-2">
+        <li>Simple design: <span class="font-bold">$40</span></li>
+        <li>Intricate design: <span class="font-bold">$55</span></li>
+        <li>Highly detailed design: <span class="font-bold">$68</span></li>
+      </ul>
+    </div>
+
+    <!-- Cupcakes -->
+    <div class="mb-10">
+      <h3 class="text-2xl font-semibold font-shadows text-pink-500 mb-4">🧁 Cupcakes / dozen</h3>
+      <ul class="space-y-2">
+        <li>Floral cupcakes: <span class="font-bold">$36</span></li>
+        <li>Regular cupcakes: <span class="font-bold">$28</span></li>
+      </ul>
+    </div>
+
+    <!-- Bread -->
+    <div class="mb-10">
+      <h3 class="text-2xl font-semibold font-shadows text-pink-500 mb-4">🍞 Sourdough Bread</h3>
+      <ul class="space-y-2">
+        <li>Regular loaf: <span class="font-bold">$12</span></li>
+        <li>Jalapeño & Cheddar loaf: <span class="font-bold">$15</span></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="text-center mt-12 border-t pt-6 border-pink-200">
+      <h3 class="text-2xl font-semibold text-pink-500 mb-2 font-shadows">📬 Contact Info</h3>
+      <p class="mb-1">📧 <a href="mailto:summersbakery@prontomail.com" class="text-blue-500 underline hover:text-blue-700">summersbakery@prontomail.com</a></p>
+      <p>📞 <a href="tel:6016401519" class="text-blue-500 hover:underline">601-640-1519</a></p>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-pink-100 text-pink-600 animate-fadeIn">
+      © 2025 Summer's Bakery. All rights reserved.
+    </footer>
+
+  </body>
+</html>
